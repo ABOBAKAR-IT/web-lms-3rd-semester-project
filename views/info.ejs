@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        *{
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+            padding: 0px;
+            margin: 0px;
+        }
+        .navbar-custom{
+            position: fixed;
+            background-color: rgb(13, 93, 158);
+            height: 70px;
+            width: 100%;
+        }
+        .toggle{
+            font-size: 26px;
+            color: #f1f1f1;
+            float: left;
+            line-height: 48px;
+            margin-top: 28px;
+            margin-left: 5%;
+        }
+
+        .navbar-custom .logo {
+            float: left;
+            padding: 20px;
+            font-size: 35px;
+            margin-top: 10px;
+            margin-left: 22%;
+            color: rgb(233, 168, 27);
+        }
+
+        .navbar-custom .navbar-nav>li>a{
+            color:white;
+            margin-top: 33px;
+            margin-left: 90%;
+        }
+
+        .icons{
+            float: right;
+            margin-right: 1%;
+
+        }
+
+        .top-icons{
+            padding: 14px 15px;
+
+        }
+        .top-icons a{
+            padding: 13px;
+            color: #f1f1f1;
+            font-size: 18px;
+        }
+
+        .sidebar {
+            background: rgb(13, 93, 158);
+            margin-top: 3px;
+            padding-top: 30px;
+            position: fixed;
+            left: 0;
+            width: 70px;
+            height: 100%;
+            transition: 0.5s;
+            transition-property: left;
+        }
+
+        .sidebar a{
+            color: #fff;
+            display: block;
+            width: 100%;
+            line-height: 60px;
+            text-decoration: none;
+            padding-left: 25px;
+            box-sizing: border-box;
+            transition: 0.5s;
+            transition-property: background;
+            margin-left: 0px;
+        }
+
+        .sidebar a:hover{
+            background: #0aebd8;
+        }
+
+
+        .welcome-text {
+
+            position: absolute;
+            width: 1400px;
+            height: 500px;
+
+            text-align: left;
+        }
+
+        .main{
+
+            margin: 15%;
+        }
+
+        .card{
+            width: 27%;
+            display: inline-block;
+            box-shadow: 2px 2px 20px black;
+            border-radius: 5px;
+            margin: 2%;
+        }
+
+        .image img{
+            width: 100%;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+
+
+
+        }
+
+        .title{
+
+            text-align: center;
+            padding: 10px;
+
+        }
+
+        h1{
+            font-size: 25px;
+            color:rgb(233, 168, 27);
+        }
+p{
+    color: rgb(233, 168, 27);
+}
+        .des{
+            padding: 3px;
+            text-align: center;
+
+            padding-top: 0px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        button{
+            margin-top: 40px;
+            margin-bottom: 10px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding:10px;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+            transition: .5s;
+            cursor: pointer;
+        }
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-custom">
+
+    <ul class="navbar-nav mr-auto">
+        <label class="toggle">
+            <i class="fa fa-bars"></i>
+        </label>
+
+        <h2 class="logo">EDU</a></h2>
+        <i class="fa fa-graduation-cap" style="font-size: 48px;color: red; margin-top: 28px;"></i>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Students
+            </a>
+
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Userlinks
+            </a>
+
+    </ul>
+    <div class="icons">
+        <div class="top-icons">
+
+            <a href="#"><i class="fa fa-bell"></i></a>
+            <a href="#"><i class="fa fa-comment-o"></i></a>
+            <a href="#"><i class="fa fa-caret-down" style="font-size: 15px;"></i></a>
+
+
+
+        </div>
+
+
+        <div class="sidebar">
+
+            <a href="#"><i class="fa fa-dashboard" style="font-size: 22px;"></i></a>
+            <a href="#"><i class="fa fa-home" style="font-size: 22px;"></i></a>
+            <a href="#"><i class="fa fa-calendar" style="font-size: 22px;"></i></a>
+            <a href="#"><i class="fa fa-file-o" style="font-size: 22px;"></i></a>
+            <a href="#"><i class="fa fa-graduation-cap" style="font-size: 22px;"></i></a>
+            <a href="#"><i class="fa fa-uder-graduate" style="font-size: 22px;"></i></a>
+        </div>
+
+
+
+</nav>
+</div>
+<div class="welcome-text">
+
+    <div class="main">
+        <h1>web developer Team</h1>
+        <!--cards -->
+
+        <div class="card">
+
+            <div class="image">
+                <img src="/images/hamza.jpg" height="180px"/>
+            </div>
+            <div class="title">
+                <h1>
+                    Hamza Babar</h1>
+            </div>
+            <div class="des">
+                <p>19014156-025</p>
+                <p>Front-End Developer</p>
+                <a href="/htmlpage/hamzacv.html"> <button>Read More...</button></a>
+            </div>
+        </div>
+        <!--cards -->
+
+
+        <div class="card">
+
+            <div class="image">
+                <img src="/images/abobakar.jpg" height="180px"/>
+            </div>
+            <div class="title">
+                <h1>
+                    ABOBAKAR</h1>
+            </div>
+            <div class="des">
+                <p>19014156-022</p>
+                <p>Backend Developer</p>
+                <a href="/htmlpage/abobakarcv.html"> <button>Read More...</button></a>
+            </div>
+        </div>
+
+
+        <div class="card">
+
+            <div class="image">
+                <img src="/images/mahnoor.jpg" height="180px"/>
+            </div>
+            <div class="title">
+                <h1>
+                    Mahnoor Zara</h1>
+            </div>
+            <div class="des">
+                <p>19014156-007</p>
+                <p>Web Designer</p>
+                <a href="/htmlpage/mahnoorcv.html"> <button>Read More...</button></a>
+            </div>
+        </div>
+
+</body>
+</html>

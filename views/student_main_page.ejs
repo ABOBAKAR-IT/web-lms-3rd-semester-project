@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>STUDENT PAGE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        *{
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+            padding: 0px;
+            margin: 0px;
+        }
+        .navbar-custom{
+            position: fixed;
+            background-color: rgb(13, 93, 158);
+            height: 70px;
+            width: 100%;
+        }
+        .toggle{
+            font-size: 26px;
+            color: #f1f1f1;
+            float: left;
+            line-height: 48px;
+            margin-top: 28px;
+            margin-left: 5%;
+        }
+
+        .navbar-custom .logo {
+            float: left;
+            padding: 20px;
+            font-size: 35px;
+            margin-top: 10px;
+            margin-left: 22%;
+            color: rgb(233, 168, 27);
+        }
+
+        .navbar-custom .navbar-nav>li>a{
+            color:white;
+            margin-top: 33px;
+            margin-left: 90%;
+        }
+
+        .icons{
+            float: right;
+            margin-right: 1%;
+
+        }
+
+        .top-icons{
+            padding: 14px 15px;
+
+        }
+        .top-icons a{
+            padding: 13px;
+            color: #f1f1f1;
+            font-size: 18px;
+        }
+
+        .sidebar {
+            background: rgb(13, 93, 158);
+            margin-top: 3px;
+            padding-top: 30px;
+            position: fixed;
+            left: 0;
+            width: 70px;
+            height: 100%;
+            transition: 0.5s;
+            transition-property: left;
+        }
+
+        .sidebar a{
+            color: #fff;
+            display: block;
+            width: 100%;
+            line-height: 60px;
+            text-decoration: none;
+            padding-left: 25px;
+            box-sizing: border-box;
+            transition: 0.5s;
+            transition-property: background;
+            margin-left: 0px;
+        }
+
+        .sidebar a:hover{
+            background: #0aebd8;
+        }
+
+
+        .welcome-text {
+            position: absolute;
+            width: 700px;
+            height: 300px;
+            margin: 10% 25%;
+            text-align: center;
+        }
+        .welcome-text h1 {
+
+            color: black;
+            text-transform: uppercase;
+            font-size: 45px;
+        }
+        .welcome-text h1 span {
+            font-size: 45px;
+            color: #00fecb;
+        }
+        .welcome-text a {
+            border: 1px solid #fff;
+            padding: 10px 25px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            margin-top: 20px;
+            display: inline-block;
+            color: #fff;
+        }
+        .welcome-text a:hover {
+            background: #fff;
+            color: #333;
+        }
+
+
+        .container{
+            text-align: center;
+
+
+
+        }
+        .btn{
+            border: 1px solid #3498db;
+            background: none;
+            padding: 60px 50px;
+            font-size: 20px;
+            font-family: "montserrat";
+            cursor: pointer;
+            margin: 10px;
+            margin-top:450px;
+            margin-left: 20px;
+            transition: 0.8s;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn1,.btn2{
+            color: #3498db;
+        }
+        .btn3,.btn4{
+            color: #fff;
+        }
+        .btn1:hover,.btn2:hover{
+            color: #fff;
+        }
+        .btn3:hover,.btn4:hover{
+            color: #3498db;
+        }
+        .btn::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 0%;
+            background: #3498db;
+            z-index: -1;
+            transition: 0.8s;
+        }
+        .btn1::before,.btn3::before{
+            top: 0;
+            border-radius: 0 0 50% 50%;
+        }
+        .btn2::before,.btn4::before{
+            bottom: 0;
+            border-radius: 50% 50% 0 0;
+        }
+        .btn3::before,.btn4::before{
+            height: 180%;
+        }
+        .btn1:hover::before,.btn2:hover::before{
+            height: 180%;
+        }
+        .btn3:hover::before,.btn4:hover::before{
+            height: 0%;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div clas="container">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+
+        <ul class="navbar-nav mr-auto">
+            <label class="toggle">
+                <i class="fa fa-bars"></i>
+            </label>
+
+            <h2 class="logo">EDU</h2>
+            <i class="fa fa-graduation-cap" style="font-size: 48px;color: red; margin-top: 28px;"></i>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Students
+                </a>
+
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Userlinks
+                </a>
+
+        </ul>
+        <div class="icons">
+            <div class="top-icons">
+
+                <a href="#"><i class="fa fa-bell"></i></a>
+                <a href="#"><i class="fa fa-comment-o"></i></a>
+                <a href="#"><i class="fa fa-caret-down" style="font-size: 15px;"></i></a>
+
+
+
+            </div>
+
+
+            <div class="sidebar">
+
+                <a href="#"><i class="fa fa-dashboard" style="font-size: 22px;"></i></a>
+                <a href="#"><i class="fa fa-home" style="font-size: 22px;"></i></a>
+                <a href="/timetable" title="TIME TABLE"><i class="fa fa-calendar" style="font-size: 22px;"></i></a>
+                <a href="/gpa" title="GPA"><i class="fa fa-file-o" style="font-size: 22px;"></i></a>
+                <a href="/info" title="Developer INFO"><i class="fa fa-graduation-cap" style="font-size: 22px;"></i></a>
+                <a href="#"><i class="fa fa-uder-graduate" style="font-size: 22px;"></i></a>
+            </div>
+            <div class="welcome-text">
+                <h1>
+
+
+    </nav>
+</div>
+<div class="welcome-text">
+    <h1>Welcome to  <span><%= Student.name %></span> </h1>
+    <p>  </p>
+    <p> </p>
+    <h1>Select your course</h1>
+</div>
+<div class="container">
+    <button class="btn btn1"><a href="/checkgrade/<%= Student.id %>/math302">Discrete Structures </a></button>
+    <button class="btn btn2"><a href="/checkgrade/<%= Student.id %>/ds203">Data Structures</a></button>
+    <button class="btn btn3"><a href="/checkgrade/<%= Student.id %>/web101">Web Systems</a>  </button>
+    <button class="btn btn4"><a href="/checkgrade/<%= Student.id %>/ms301">Multimedia System</a>  </button>
+</div>
+
+</body>
+</html>

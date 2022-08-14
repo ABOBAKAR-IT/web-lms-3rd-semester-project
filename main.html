@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my page</title>
+    <style>
+        button{
+            padding: 10px;
+            color: aquamarine;
+            margin-left: 50%;
+            background-color: chocolate;
+        }
+        h1{
+            text-align: center;
+
+        }
+    </style>
+    <script src="jquery-3.5.1.js"></script>
+</head>
+<body>
+<h1 id="id1">WELCOME </h1>
+
+<form action="/check" method="post">
+<labal>ENTER A ID  </labal>
+    <input type="text" name="eid">
+    <br>
+    <labal>ENTER A password  </labal>
+    <input type="password" name="psd">
+    <button type="submit">login</button>
+    <button type="button" onclick="callser()">call server</button>
+</form>
+<script>
+   var s= $("#id1");
+   $("#id1").html("rana abobakar");
+   function callser() {
+       $.ajax({
+           type: 'get',
+           url: '/a',
+           success: function (data) {
+               // use data
+           }
+       })
+   }
+</script>
+</body>
+</html>

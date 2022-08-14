@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="jquery-3.5.1.js"></script>
+    <style>
+        *{
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+            padding: 0px;
+            margin: 0px;
+        }
+        .navbar-custom{
+
+            background-color: rgb(13, 93, 158);
+            height: 70px;
+            width: 100%;
+        }
+        .toggle{
+            font-size: 26px;
+            color: #f1f1f1;
+            float: left;
+            line-height: 48px;
+            margin-top: 28px;
+            margin-left: 5%;
+        }
+
+        .navbar-custom .logo {
+            float: left;
+            padding: 20px;
+            font-size: 35px;
+            margin-top: 10px;
+            margin-left: 22%;
+            color: rgb(233, 168, 27);
+        }
+
+        .navbar-custom .navbar-nav>li>a{
+            color:white;
+            margin-top: 33px;
+            margin-left: 90%;
+        }
+
+        .icons{
+            float: right;
+            margin-right: 1%;
+
+        }
+
+        .top-icons{
+            padding: 14px 15px;
+
+        }
+        .top-icons a{
+            padding: 13px;
+            color: #f1f1f1;
+            font-size: 18px;
+        }
+
+
+
+        .welcome-text {
+
+            position: absolute;
+            width: 700px;
+            height: 700px;
+            margin: 3% 25%;
+            text-align: left;
+        }
+        .welcome-text h1 {
+            margin-left: 25%;
+            color: black;
+            text-transform: uppercase;
+            font-size: 40px;
+        }
+        .welcome-text p {
+
+
+            width: 150%;
+            margin-top: 0%;
+            font-size: 20px;
+            color: white;
+            text-align: 0px;
+            padding: 30px;
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-custom">
+
+    <ul class="navbar-nav mr-auto">
+        <label class="toggle">
+            <i class="fa fa-bars"></i>
+        </label>
+
+        <h2 class="logo">EDU</a></h2>
+        <i class="fa fa-graduation-cap" style="font-size: 48px;color: red; margin-top: 28px;"></i>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Students
+            </a>
+
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Userlinks
+            </a>
+
+    </ul>
+    <div class="icons">
+        <div class="top-icons">
+
+            <a href="#"><i class="fa fa-bell"></i></a>
+            <a href="#"><i class="fa fa-comment-o"></i></a>
+            <a href="#"><i class="fa fa-caret-down" style="font-size: 15px;"></i></a>
+
+
+
+        </div>
+
+
+
+
+
+</nav>
+</div>
+<div class="welcome-text">
+    <h1> GPA Calculator::</h1>
+
+
+
+
+
+    <div class="container">
+
+        <br><br>
+        <div>
+            <form action="#" >
+                <table>
+                    <tr><th>NO &nbsp;</th><th>&nbsp; SUBJECT No/Grade</th><th>&nbsp;&nbsp; POINT</th><th>Credit Hours  &nbsp; </th><th>&nbsp; &nbsp; Grade Points</th></tr>
+
+                    <tr><td>1</td><td><input type="text" name="subject1" id="subject1" value="" class="form-control"></td><td><input type="text" name="subject1point" id="subject1point" value="" autocomplete="off" class="form-control" readonly>
+                        </td><td>
+                            <input type="text" id="cradit1" name="" value="3" autocomplete="off" class="form-control" min="1" max="4" readonly>
+                        </td><td>
+                            <input type="text" name="subject1ch" id="subject1ch" value="" class="form-control" readonly><span id="subject1fix" style="color: red;"></span></td></tr>
+
+                    <tr><td>2</td><td><input type="text" name="subject2" id="subject2" value="" class="form-control"></td><td><input type="text" name="subject2point" id="subject2point" value="" autocomplete="off" class="form-control" readonly></td><td>
+                            <input type="text" id="cradit2" name="" value="3" autocomplete="off" class="form-control" min="1" max="4" readonly>
+                        </td><td><input type="text" name="subject2ch" id="subject2ch" value="" class="form-control" readonly><span id="subject2fix" style="color: red;"></span></td></tr>
+
+                    <tr><td>3</td><td><input type="text" name="subject3" id="subject3" value="" class="form-control"></td><td><input type="text" name="subject3point" id="subject3point" value="" autocomplete="off" class="form-control" readonly></td><td><input type="text" id="cradit3" name="" value="3" autocomplete="off" class="form-control" min="1" max="4" readonly></td><td><input type="text" name="subject3ch" id="subject3ch" value="" class="form-control" readonly><span id="subject3fix" style="color: red;"></span></td></tr>
+
+                    <tr><td>4</td><td><input type="text" name="subject4" id="subject4" value="" class="form-control"></td><td><input type="text" name="subject4point" id="subject4point" value="" autocomplete="off"class="form-control" readonly></td><td><input type="text" id="cradit4" name="" value="3" autocomplete="off" class="form-control" min="1" max="4" readonly></td><td><input type="text" name="subject4ch" id="subject4ch" value="" class="form-control" readonly><span id="subject4fix" style="color: red;"></span></td></tr>
+
+                    <tr><td>5</td><td><input type="text" name="subject5" id="subject5" value="" class="form-control"></td><td><input type="text" name="subject5point" id="subject5point" value="" autocomplete="off" class="form-control" readonly ></td><td><input type="text" id="cradit5" name="" value="3" autocomplete="off" class="form-control" min="1" max="4" readonly></td><td><input type="text" name="subject5ch" id="subject5ch" value="" class="form-control" readonly><span id="subject5fix" style="color: red;"></span></td></tr>
+
+                    <tr><td> </td><td> </td><td> <td>TOTAL Hours</td><td>TOTAL Grade Points  </td></tr>
+                    <tr><td> </td><td> </td><td> <td><input type="text" name="" id="Th" value="" class="form-control" readonly></td><td><input type="text" name="" id="Tgp" value="" class="form-control" readonly> </td></tr>
+                    <tr><td> </td><td> </td><td> <td></td><td>GPA </td></tr>
+                    <tr><td> </td><td> </td><td> <td></td><td><input type="text" name="" id="gpa" value="" class="form-control" readonly> </td></tr>
+                </table>
+                <br><br>
+
+                <button type="button" id="subbtn1" onclick="mainfun()">GPA</button>
+                <button type="button" id="subbtn2" onclick="refresh_all()">Refresh all</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var tottalgp=0;
+        var error_ch=true;
+        var sub=new Array();
+        var subcradit=new Array();
+
+        function mainfun()
+        {
+            var sub1=document.getElementById('subject1').value;
+            var sub2=document.getElementById("subject2").value;
+            var sub3=document.getElementById("subject3").value;
+            var sub4=document.getElementById("subject4").value;
+            var sub5=document.getElementById("subject5").value;
+            sub[0]=sub1;
+            sub[1]=sub2;
+            sub[2]=sub3;
+            sub[3]=sub4;
+            sub[4]=sub5;
+
+
+
+
+            var j=0;
+            var k=0;
+            for(var i=0;i<5;i++)
+            {j=i;
+                k=i;
+                if(sub[i]=="")
+                {
+                    document.getElementById('subject'+ ++j).value="**Enter Grade or Number";
+                    error_ch= false;
+                }
+                else
+                {
+                    if(isNaN(sub[i]))
+                    {
+                        checkGrade(sub[i]);
+
+                    }
+                    else
+                    {
+                        var num= checkNumber(sub[i]);
+                        if(num==0)
+                        {
+                            document.getElementById('subject'+ ++j + 'point').value="Wrong Input";
+                            error_ch= false;
+                        }
+                        else{
+                            checkGrade(num);
+                        }
+
+
+                    }
+
+                }
+            }
+
+            function checkGrade(grd)
+            {
+                switch(grd)
+                {
+                    case 'A+':
+                    case 'a+':
+                    {
+                        document.getElementById('subject'+ ++j + 'point').value="4";
+                        document.getElementById('subject'+ ++k + 'ch').value=4*3;
+                        tottalgp+=4*3;
+                        break;
+                    }
+                    case 'A':
+                    case 'a':
+                    {
+                        document.getElementById('subject'+ ++j + 'point').value="3.7";
+                        document.getElementById('subject'+ ++k + 'ch').value=3*3;
+
+                        tottalgp+=3.7*3;
+                        break;
+                    }
+                    case 'B+':
+                    case 'b+':
+                    {
+                        document.getElementById('subject'+ ++j + 'point').value="3.4";
+                        document.getElementById('subject'+ ++k + 'ch').value=3.4*3;
+                        tottalgp+=3.4*3;
+                        break;
+                    }
+                    case 'B':
+                    case 'b':
+                    {
+                        document.getElementById('subject'+ ++j + 'point').value="3";
+                        document.getElementById('subject'+ ++k + 'ch').value=3*3;
+                        tottalgp+=3*3;
+                        break;
+                    }
+                    case 'B-':
+                    case 'b-':
+                    {
+                        document.getElementById('subject'+ ++j + 'point').value="2.5";
+                        document.getElementById('subject'+ ++k + 'ch').value=2.5*3;
+                        tottalgp+=2.5*3;
+                        break;
+                    }
+                    case 'C+':
+                    case 'c+':
+                    {
+                        document.getElementById('subject'+ ++j + 'point').value="2";
+                        document.getElementById('subject'+ ++k + 'ch').value=2*3;
+                        tottalgp+=2*3;
+                        break;
+                    }
+                    case 'C':
+                    case 'c':
+                    {
+                        document.getElementById('subject'+ ++j + 'point').value="1.5";
+                        document.getElementById('subject'+ ++k + 'ch').value=1.5*3;
+                        tottalgp+=1.5*3;
+                        break;
+                    }
+                    case 'D':
+                    case 'd':
+                    {
+                        document.getElementById('subject'+ ++j + 'point').value="1";
+                        document.getElementById('subject'+ ++k + 'ch').value=1*3;
+                        tottalgp+=1*3;
+                        break;
+                    }
+                    case 'F':
+                    case 'f':
+                    {
+                        document.getElementById('subject'+ ++j + 'point').value="0";
+                        document.getElementById('subject'+ ++k + 'ch').value=0*3;
+                        tottalgp+=0*3;
+                        break;
+                    }
+                    default:
+                        document.getElementById('subject'+ ++j + 'point').value="Wrong Input";
+
+                }
+            }
+            function checkNumber(mar)
+            {
+                var tt;
+                mar=parseInt(mar);
+                if(mar>=85)
+                    tt='A+';
+                else if(mar>=80)
+                    tt='A';
+                else if(mar>=75)
+                    tt='B+';
+                else if(mar>=70)
+                    tt='B';
+                else if(mar>=65)
+                    tt='B-';
+                else if(mar>=60)
+                    tt='C+';
+                else if(mar>=55)
+                    tt='C';
+                else if(mar>=50)
+                    tt='D';
+                else
+                    tt='F';
+
+                if(mar>=101 || mar<=0)
+                    tt=0;
+                return tt;
+            }
+            if(error_ch)
+                calculator_gpa();
+        }
+        function refresh_all()
+        {
+            var k,j,l;
+            for(var i=0;i<5;i++)
+            {
+                k1=j1=l1=i;
+                document.getElementById('subject'+ ++j1 + 'point').value="";
+                document.getElementById('subject'+ ++k1 + 'ch').value="";
+                document.getElementById('subject'+ ++l1).value="";
+            }
+
+            document.getElementById('Th').value="";
+            document.getElementById('Tgp').value="";
+            document.getElementById('gpa').value="";
+        }
+        function calculator_gpa()
+        {
+            document.getElementById('Th').value=15;
+            document.getElementById('Tgp').value=tottalgp;
+
+            var gpa=tottalgp/15;
+            document.getElementById('gpa').value=gpa;
+        }
+    </script>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</body>
+</html>

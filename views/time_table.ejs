@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        *{
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+            padding: 0px;
+            margin: 0px;
+        }
+        .navbar-custom{
+
+            background-color: rgb(13, 93, 158);
+            height: 70px;
+            width: 100%;
+        }
+        .toggle{
+            font-size: 26px;
+            color: #f1f1f1;
+            float: left;
+            line-height: 48px;
+            margin-top: 28px;
+            margin-left: 5%;
+        }
+
+        .navbar-custom .logo {
+            float: left;
+            padding: 20px;
+            font-size: 35px;
+            margin-top: 10px;
+            margin-left: 22%;
+            color: rgb(233, 168, 27);
+        }
+
+        .navbar-custom .navbar-nav>li>a{
+            color:white;
+            margin-top: 33px;
+            margin-left: 90%;
+        }
+
+        .icons{
+            float: right;
+            margin-right: 1%;
+
+        }
+
+        .top-icons{
+            padding: 14px 15px;
+
+        }
+        .top-icons a{
+            padding: 13px;
+            color: #f1f1f1;
+            font-size: 18px;
+        }
+
+
+
+        .welcome-text {
+
+            position: absolute;
+            width: 1100px;
+            height: 700px;
+            margin: 5% 20%;
+            text-align: left;
+        }
+        .welcome-text h1 {
+            margin-left: 20%;
+            color: black;
+            text-transform: uppercase;
+            font-size: 40px;
+        }
+        .welcome-text p {
+
+            width: 100%;
+            margin-top: 5%;
+        }
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-custom">
+
+    <ul class="navbar-nav mr-auto">
+        <label class="toggle">
+            <i class="fa fa-bars"></i>
+        </label>
+
+        <h2 class="logo">EDU</a></h2>
+        <i class="fa fa-graduation-cap" style="font-size: 48px;color: red; margin-top: 28px;"></i>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Students
+            </a>
+
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Userlinks
+            </a>
+
+    </ul>
+    <div class="icons">
+        <div class="top-icons">
+
+            <a href="#"><i class="fa fa-bell"></i></a>
+            <a href="#"><i class="fa fa-comment-o"></i></a>
+            <a href="#"><i class="fa fa-caret-down" style="font-size: 15px;"></i></a>
+
+
+
+        </div>
+
+
+
+
+
+</nav>
+</div>
+<div class="welcome-text">
+    <h1> Time table:IT-19-A::</h1>
+
+
+    <p>
+        <table style="text-align: center;" width="70%" border="1" align="center" cellspacing="0" cellpadding="1" title="IT-19-A Class Time Table" >
+
+            <tr>
+                <th></th>
+                <th >
+                    <br> 1
+    <p style=" font-size:0.35cm;">15:00 - 16:30</p>
+    </th>
+    <th >
+        <br>2
+        <p style=" font-size:0.35cm;">17:00 - 18:30</p>
+    </th>
+    <th >
+        <br> 3
+        <p style=" font-size:0.35cm;">18:30 - 20:00</p>
+    </th>
+    </tr>
+
+    <tr>
+        <th style="font-size:1cm;">Mo</th>
+        <td ><br>Discrete Structures<br>
+            <p style="text-align: right; font-size:0.35cm;"> Mr. Shahbaz &nbsp;</p></td>
+        <td></td>
+        <td><br>Data Structures and Algoritham<br>
+            <p style="text-align: right; font-size:0.35cm;"> Mr. Syed Nakshab&nbsp;</p></td>
+    </tr>
+    <tr>
+        <th style="font-size:1cm;">Tu</th>
+        <td><br>Introduction to Psychology<br>
+            <p style="text-align: right; font-size:0.35cm;"> Ms. Shaista Noreen&nbsp;</p></td>
+        <td><br>Web System and Technology<br>
+            <p style="text-align: right; font-size:0.35cm;"> Mr. Hafiz Muhammad Usman&nbsp;</p></td>
+        <td><br>Data Structures and Algoritham<br>
+            <p style="text-align: right; font-size:0.35cm;"> Mr. Syed Nakshab&nbsp;</p></td>
+    </tr>
+    <tr>
+        <th style="font-size:1cm;">We</th>
+        <td><br>Pakistan Studies<br>
+            <p style="text-align: right;font-size:0.35cm;"> Ms. Maryam Arif&nbsp;</p></td>
+        <td><br>Multimedia Systems And Design<br>
+            <p style="text-align: right; font-size:0.35cm;">Mr. Sami Ullah&nbsp;</p></td>
+        <td><br>Web System and Technology<br>
+            <p style="text-align: right; font-size:0.35cm;"> Mr. Hafiz Muhammad Usman&nbsp;</p></td>
+    </tr>
+    <tr>
+        <th style="font-size:1cm; ">Th</th>
+        <td><br>Data Structures Lab<br>
+            <p style="text-align: right; font-size:0.35cm;">Lab-04&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; IT-19-A&nbsp;</p></td>
+        <td><br>Multimedia Systems And Design<br>
+            <p style="text-align: right; font-size:0.35cm;">Mr. Sami Ullah&nbsp;</p></td>
+        <td><br>Discrete Structures<br>
+            <p style="text-align: right; font-size:0.35cm;"> Mr. Shahbaz&nbsp;</p></td>
+    </tr>
+    <tr>
+        <th style="font-size:1cm;">Fr</th>
+        <td><br>Pakistan Studies
+            <p style="text-align: right; font-size:0.35cm;">Ms. Maryam Arif&nbsp;</p></td>
+        <td><br>Introduction to Psychology
+            <p style="text-align: right; font-size:0.35cm;"> Ms. Shaista Noreen&nbsp;</p></td>
+        <td><br>Data Structures Lab
+            <p style="text-align: right; font-size:0.35cm;">Mr. Syed Nakshab&nbsp;</p></td>
+    </tr>
+
+    </table>
+
+    </p>
+
+
+</div>
+
+
+
+
+
+
+</body>
+</html>

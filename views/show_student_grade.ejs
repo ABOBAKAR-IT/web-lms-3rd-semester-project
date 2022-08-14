@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        *{
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+            padding: 0px;
+            margin: 0px;
+        }
+        .navbar-custom{
+            position: fixed;
+            background-color: rgb(13, 93, 158);
+            height: 70px;
+            width: 100%;
+        }
+        .toggle{
+            font-size: 26px;
+            color: #f1f1f1;
+            float: left;
+            line-height: 48px;
+            margin-top: 28px;
+            margin-left: 5%;
+        }
+
+        .navbar-custom .logo {
+            float: left;
+            padding: 20px;
+            font-size: 35px;
+            margin-top: 10px;
+            margin-left: 22%;
+            color: rgb(233, 168, 27);
+        }
+
+        .navbar-custom .navbar-nav>li>a{
+            color:white;
+            margin-top: 33px;
+            margin-left: 90%;
+        }
+
+        .icons{
+            float: right;
+            margin-right: 1%;
+
+        }
+
+        .top-icons{
+            padding: 14px 15px;
+
+        }
+        .top-icons a{
+            padding: 13px;
+            color: #f1f1f1;
+            font-size: 18px;
+        }
+
+        .sidebar {
+            background: rgb(13, 93, 158);
+            margin-top: 3px;
+            padding-top: 30px;
+            position: fixed;
+            left: 0;
+            width: 70px;
+            height: 100%;
+            transition: 0.5s;
+            transition-property: left;
+        }
+
+        .sidebar a{
+            color: #fff;
+            display: block;
+            width: 100%;
+            line-height: 60px;
+            text-decoration: none;
+            padding-left: 25px;
+            box-sizing: border-box;
+            transition: 0.5s;
+            transition-property: background;
+            margin-left: 0px;
+        }
+
+        .sidebar a:hover{
+            background: #0aebd8;
+        }
+
+
+        .welcome-text {
+            position: absolute;
+            width: 800px;
+            height: 200px;
+            margin
+            text-align: center;
+        }
+        .welcome-text h1 {
+            margin: 10% 40%;
+            color: black;
+            text-transform: uppercase;
+            font-size: 35px;
+        }
+        .welcome-text h2 {
+            width:700px;
+
+            color: black;
+            text-transform: uppercase;
+            font-size: 35px;
+
+        }
+
+
+
+
+        table{
+            margin-top: 90px;
+        }
+        table,th,td{
+            font-family: Roboto, sans-serif;
+            margin-left: 0%;
+            border: 2px solid black;
+            border-collapse: collapse;
+            line-height: 20px;
+            background-color:rgb(33, 153, 143);
+            color:white;
+            padding: 18px;
+        }
+        td{
+            text-align: center;
+            background-color:rgb(33, 153, 143);
+            color:white;
+        }
+        #btn{
+            background-color:rgb(33, 153, 143);
+            color:white;
+            padding:5px;
+            margin-left: 60%;
+        }
+    </style>
+
+</head>
+<body>
+
+
+<div clas="container">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+
+        <ul class="navbar-nav mr-auto">
+            <label class="toggle">
+                <i class="fa fa-bars"></i>
+            </label>
+
+            <h2 class="logo">EDU</h2>
+            <i class="fa fa-graduation-cap" style="font-size: 48px;color: red; margin-top: 28px;"></i>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Students
+                </a>
+
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Userlinks
+                </a>
+
+        </ul>
+        <div class="icons">
+            <div class="top-icons">
+
+                <a href="#"><i class="fa fa-bell"></i></a>
+                <a href="#"><i class="fa fa-comment-o"></i></a>
+                <a href="#"><i class="fa fa-caret-down" style="font-size: 15px;"></i></a>
+
+
+
+            </div>
+
+
+
+
+
+    </nav>
+</div>
+
+<div class="welcome-text">
+
+<% var ch=0;%>
+    <% Grade.forEach((grade)=>{ %>
+<%if(sid==grade.id && sbid==grade.subid){ %>
+    <%ch=1;%>
+        <h1>
+            <table width="50%" border=1>
+                <tr>
+                    <th colspan="5" style="background-color: rgb(20, 79, 134);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subject ID </th>
+                </tr>
+                <tr>
+                    <th colspan="5">
+                        <input type="text" name="subid" id="subid" placeholder="<%=grade.subid%>" class="form-control" readonly>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="5" style="background-color: rgb(20, 79, 134);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Roll No.</th>
+                </tr>
+                <tr>
+                    <th colspan="5">
+                        <input type="text" name="id" id="id" placeholder="<%=grade.id%>" class="form-control" readonly>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Quizzes</th>
+                    <th>Assignments</th>
+                    <th>Presentation</th>
+                    <th>Mid_Term</th>
+                    <th>Final_Term</th>
+
+                </tr>
+                <tr>
+                    <td>5 </td>
+                    <td>10 </td>
+                    <td>10 </td>
+                    <td> 25</td>
+                    <td>50 </td>
+                </tr>
+                <tr>
+                    <td> &nbsp;<input type="text" name="quiz" id="quiz" value="<%=grade.quiz%>" class="form-control" readonly></td>
+                    <td> &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" name="ass" id="ass" placeholder="<%=grade.pre%>" class="form-control" readonly></td>
+                    <td> &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" name="pre" id="pre" placeholder="<%=grade.Ass%>" class="form-control" readonly></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="mid" id="mid" placeholder="<%=grade.mid%>" class="form-control" readonly></td>
+                    <td>&nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="final" id="final" placeholder="<%=grade.final%>" class="form-control" readonly></td>
+                </tr>
+        </h1>
+        </table>
+
+<%}%>
+    <% });%>
+<% if(ch==0){ %>
+
+    <h1>
+        <table width="50%" border=1>
+            <tr>
+                <th colspan="5" style="background-color: rgb(20, 79, 134);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subject ID </th>
+            </tr>
+            <tr>
+                <th colspan="5">
+                    <input type="text" name="subid" id="subid" placeholder="<%= sbid%>" class="form-control" readonly>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="5" style="background-color: rgb(20, 79, 134);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Roll No.</th>
+            </tr>
+            <tr>
+                <th colspan="5">
+                    <input type="text" name="id" id="id" placeholder="<%= sid%>" class="form-control" readonly>
+                </th>
+            </tr>
+            <tr>
+                <th>Quizzes</th>
+                <th>Assignments</th>
+                <th>Presentation</th>
+                <th>Mid_Term</th>
+                <th>Final_Term</th>
+
+            </tr>
+            <tr>
+                <td>5 </td>
+                <td>10 </td>
+                <td>10 </td>
+                <td> 25</td>
+                <td>50 </td>
+            </tr>
+            <tr>
+                <td> &nbsp;<input type="text" name="quiz" id="quiz" value="A" class="form-control" readonly></td>
+                <td> &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" name="ass" id="ass" placeholder=" A" class="form-control" readonly></td>
+                <td> &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" name="pre" id="pre" placeholder="A" class="form-control" readonly></td>
+                <td>&nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="mid" id="mid" placeholder="A" class="form-control" readonly></td>
+                <td>&nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="final" id="final" placeholder="A" class="form-control" readonly></td>
+            </tr>
+    </h1>
+    </table>
+
+
+    <%}%>
+
+
+</div>
+</body>
+</html>
